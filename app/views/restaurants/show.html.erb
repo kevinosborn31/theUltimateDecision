@@ -1,3 +1,23 @@
 <h2>
-Restaurant <%= @restaurant.name %>
+<%= @restaurant.name %>
 </h2>
+
+<a href="#">Edit</a>
+<a href="#">Delete</a>
+
+<p>
+  <strong>Price Range - </strong>
+  <%= @restaurant.price %>
+</p>
+
+<p>
+  <strong>Cuisine - </strong>
+  <%= @restaurant.cuisine %>
+</p>
+
+<p>
+  <strong>Location - </strong>
+  <%= @restaurant.location %>
+</p>
+
+<img src="<%= @restaurant.photo %>" alt="<%= @restaurant.name %>">
