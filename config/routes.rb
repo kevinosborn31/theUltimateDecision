@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   # 1. Pre-filled form for an restaurant, edit
   get '/restaurants/edit/:id' => 'restaurants#edit', as: 'edit_restaurant' # gives us edit_restaurant_path(ID)
   # 2. Form submit, update DB, redirect
-  patch '/restaurants/:id' => 'restaurants#update'
+  patch 'show/:id' => 'restaurants#update'
 
   # DESTROY
   delete '/show/:id' => 'restaurants#destroy'
