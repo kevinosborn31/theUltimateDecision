@@ -34,7 +34,7 @@ end
 def destroy
   Restaurant.destroy params[:id]
 
-  redirect_to artists_path
+  redirect_to restaurants_path
 end
 
 private

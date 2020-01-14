@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   patch '/restaurants/:id' => 'restaurants#update'
 
   # DESTROY
-  delete '/restaurants/:id' => 'restaurants#destroy'
+  delete '/show/:id' => 'restaurants#destroy'
   # Create ALL CRUD routes for the Reviews Model
   resources :reviews
 
