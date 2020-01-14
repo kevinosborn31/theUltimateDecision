@@ -39,7 +39,7 @@ end
 
 private
 
-def artist_params
+def restaurant_params
   params.require(:restaurant).permit( :name, :price, :cuisine, :location, :photo)
 end
 
