@@ -4,7 +4,6 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    raise 'hell'  # lets us see params (submitted form data) in the browser
   end
 
   def index

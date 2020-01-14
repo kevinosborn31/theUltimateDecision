@@ -1,0 +1,21 @@
+<%= form_for @restaurant do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+
+  <%= f.label :cuisine %>
+  <%= f.text_field :cuisine %>
+
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+
+  <%= f.label :photo, 'Photo URL' %>
+  <%= f.text_field :photo %>
+
+  <br>
+  <%= f.submit %>
+
+<% end %>
