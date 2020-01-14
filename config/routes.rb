@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => 'randomizer#randomize'
   # CREATE
   # 1. Blank Form
   get '/restaurants/new' => 'restaurants#new', as: 'new_restaurant'
@@ -11,16 +12,16 @@ Rails.application.routes.draw do
   # 1. Index of Restaurants
   get '/restaurants' => 'restaurants#index'
   # 2. Show page for a single restaurant's details
-  get '/restaurants/:id' => 'restaurants#show', as: 'restaurant'
+  get '/show/:id' => 'restaurants#show', as: 'restaurant'
 
   # UPDATE
   # 1. Pre-filled form for an restaurant, edit
-  get '/restaurants/:id/edit' => 'restaurants#edit', as: 'restaurant' # gives us edit_restaurant_path(ID)
+  get '/restaurants/edit/:id' => 'restaurants#edit', as: 'edit_restaurant' # gives us edit_restaurant_path(ID)
   # 2. Form submit, update DB, redirect
   patch '/restaurants/:id' => 'restaurants#update'
 
   # DESTROY
-  delete '/restaurants/:id' => 'artists#destroy'
+  delete '/restaurants/:id' => 'restaurants#destroy'
   # Create ALL CRUD routes for the Reviews Model
   resources :reviews
 

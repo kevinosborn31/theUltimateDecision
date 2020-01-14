@@ -1,16 +1,11 @@
-img.restaurant {
-  max-height: 300px;
+.demo-list-icon {
+  width: 300px;
 }
 
-form.new_restaurant, form edit_restaurant {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-row-gap: 6px;
-  width: 30%;
-  margin-bottom: 30px;
+a {
+  text-decoration: none;
 }
 
-form.new_artist label, form.edit_artist label {
-  text-align: right;
-  margin-right: 8px;
+a:hover {
+  text-decoration: underline;
 }
