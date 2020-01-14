@@ -5456,3 +5456,43 @@ Processing by RestaurantsController#edit as HTML
 Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/restaurants/edit/7" for ::1 at 2020-01-14 12:02:46 +1100
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:14
+  Rendering restaurants/edit.html.erb within layouts/application
+  Rendered restaurants/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/edit/7" for ::1 at 2020-01-14 12:03:32 +1100
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:14
+  Rendering restaurants/edit.html.erb within layouts/application
+  Rendered restaurants/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants/edit/7" for ::1 at 2020-01-14 12:03:39 +1100
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:14
+  Rendering restaurants/edit.html.erb within layouts/application
+  Rendered restaurants/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants/edit/7" for ::1 at 2020-01-14 12:03:43 +1100
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:14
+  Rendering restaurants/edit.html.erb within layouts/application
+  Rendered restaurants/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+

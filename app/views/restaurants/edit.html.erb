@@ -2,23 +2,27 @@
 
 <form action="index.html" method="post">
   <label>
-  Name: <input type="text" name="<%= @restaurant.name %>">
+  Name: <input type="text" name="<%= @restaurant.name %>" value="<%= @restaurant.name %>">
   </label>
   <br>
   <label>
-    Price Range: <input type="text" name="<%= @restaurant.price %>">
+    Price Range: <input type="text" name="<%= @restaurant.price %>" value="<%= @restaurant.price %>">
   </label>
   <br>
   <label>
-    Cuisine: <input type="text" name="<%= @restaurant.cuisine %>">
+    Cuisine: <input type="text" name="<%= @restaurant.cuisine %>"
+    value="<%= @restaurant.cuisine %>">
   </label>
   <br>
   <label>
-    Location: <input type="text" name="<%= @restaurant.location %>">
+    Location: <input type="text" name="<%= @restaurant.location %>"
+    value="<%= @restaurant.name %>">
   </label>
   <br>
   <label>
-    Photo: <input ty=e"text" name="<%= @restaurant.photo %>">
+    Photo: <input type="text" name="<%= @restaurant.photo %>" value="<%= @restaurant.photo %>">
   </label>
+  <br>
+  <br>
   <input type="submit" value="Submit Changes">
 </form>
