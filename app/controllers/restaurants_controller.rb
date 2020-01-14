@@ -9,7 +9,7 @@ class RestaurantsController < ApplicationController
   def create
     Restaurant.create restaurant_params
 
-    redirect_to restaurant_path
+    redirect_to "/restaurants"
   end
 
   def index
