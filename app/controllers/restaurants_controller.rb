@@ -3,18 +3,13 @@ class RestaurantsController < ApplicationController
   skip_before_action :verify_authenticity_token, raise: false
 
   def new
+    @restaurant = Restaurant.new
   end
 
   def create
-    Restaurant.create(
-      name: params[:name],
-      price: params[:price],
-      cuisine: params[:cuisine],
-      location: params[:location],
-      photo: params[:photo]
-    )
+    Artist.create artist_params
 
-    redirect_to( restaurants_path )
+    redirect_to artists_path
   end
 
   def index
@@ -31,24 +26,21 @@ class RestaurantsController < ApplicationController
 
   def update
     restaurant = Restaurant.find params[:id]
-    restaurant.update(
-      name: params[:name],
-      price: params[:price],
-      cuisine: params[:cuisine],
-      location: params[:location],
-      photo: params[:photo]
-    )
+    restaurant.update restaurant_params
 
     redirect_to restaurant_path(restaurant.id)
-
-
-
 end
 
 def destroy
   Restaurant.destroy params[:id]
 
-  redirect_to( planets_path )
+  redirect_to artists_path
+end
+
+private
+
+def artist_params
+  params.require(:restaurant).permit( :name, :price, :cuisine, :location, :photo)
 end
 
 end
