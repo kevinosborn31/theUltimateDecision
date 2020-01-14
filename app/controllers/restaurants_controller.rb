@@ -7,9 +7,9 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    Artist.create artist_params
+    Restaurant.create restaurant_params
 
-    redirect_to artists_path
+    redirect_to restaurant_path
   end
 
   def index
