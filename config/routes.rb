@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   get 'restaurants/show'
   get '/restaurants/show/:id' => 'restaurants#show'
   get '/restaurants/edit/:id' => 'restaurants#edit'
-  get 'restaurants/new'
+  get '/restaurants/new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
