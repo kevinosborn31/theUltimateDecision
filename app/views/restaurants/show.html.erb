@@ -2,8 +2,9 @@
 <%= @restaurant.name %>
 </h2>
 
-<a href="#">Edit</a>
+<a href="/restaurants/edit/<%= params[:id] %>">Edit</a>
 <a href="#">Delete</a>
+<a href="/restaurants/index">Go back</a>
 
 <p>
   <strong>Price Range - </strong>

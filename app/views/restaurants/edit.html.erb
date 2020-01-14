@@ -1,2 +1,24 @@
-<h1>Restaurants#edit</h1>
-<p>Find me in app/views/restaurants/edit.html.erb</p>
+<h2>Edit <%= @restaurant.name %></h2>
+
+<form action="index.html" method="post">
+  <label>
+  Name: <input type="text" name="<%= @restaurant.name %>">
+  </label>
+  <br>
+  <label>
+    Price Range: <input type="text" name="<%= @restaurant.price %>">
+  </label>
+  <br>
+  <label>
+    Cuisine: <input type="text" name="<%= @restaurant.cuisine %>">
+  </label>
+  <br>
+  <label>
+    Location: <input type="text" name="<%= @restaurant.location %>">
+  </label>
+  <br>
+  <label>
+    Photo: <input ty=e"text" name="<%= @restaurant.photo %>">
+  </label>
+  <input type="submit" value="Submit Changes">
+</form>
