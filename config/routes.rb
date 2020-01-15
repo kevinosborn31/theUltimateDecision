@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'reviews/index'
+  get 'reviews/show'
+  get 'reviews/new'
   root :to => 'randomizer#randomize'
   # CREATE
   # 1. Blank Form

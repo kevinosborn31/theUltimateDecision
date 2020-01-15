@@ -15162,3 +15162,67 @@ Processing by ReviewsController#new as HTML
 Completed 200 OK in 57ms (Views: 18.8ms | ActiveRecord: 12.3ms)
 
 
+Started GET "/reviews/new" for ::1 at 2020-01-15 11:36:55 +1100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (6.0ms)
+  Rendered reviews/new.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/views/reviews/_form.html.erb:13: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/reviews/_form.html.erb:13: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/reviews/new.html.erb:3:in `_app_views_reviews_new_html_erb___2372132461375922958_70096949387440'
+Started GET "/reviews/new" for ::1 at 2020-01-15 11:37:10 +1100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/views/reviews/new.html.erb:3: syntax error, unexpected tLABEL
+output_buffer.append=( render: 'form' );
+                              ^):
+  
+app/views/reviews/new.html.erb:3: syntax error, unexpected tLABEL
+Started GET "/reviews/new" for ::1 at 2020-01-15 11:37:19 +1100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (1.2ms)
+  Rendered reviews/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/views/reviews/_form.html.erb:13: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/reviews/_form.html.erb:13: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/reviews/new.html.erb:3:in `_app_views_reviews_new_html_erb___2372132461375922958_70096920228740'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4248615402513955410)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateReviews (20200115004553)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "name" character varying, "rating" integer, "comment" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200115004553_create_reviews.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4248615402513955410)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kevinosborn/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kevinosborn/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kevinosborn/.rvm/gems/ruby-2.4.1/bin/rake:23
