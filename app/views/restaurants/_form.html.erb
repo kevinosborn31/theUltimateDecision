@@ -3,19 +3,52 @@
 
   <%= f.label :name %>
   <%= f.text_field :name %>
-
+  <br>
+  <br>
   <%= f.label :price %>
-  <%= f.text_field :price %>
-
+  <br>
+  <%= f.radio_button :price, "Cheap" %> Cheap <br />
+  <%= f.radio_button :price, "Medium" %> Medium <br />
+  <%= f.radio_button :price, "Expensive" %> Expensive <br />
+<br>
   <%= f.label :cuisine %>
-  <%= f.text_field :cuisine %>
-
+  <br>
+  <%= f.radio_button :cuisine, "American" %> American
+  <br>
+  <%= f.radio_button :cuisine, "Italian" %> Italian
+  <br>
+  <%= f.radio_button :cuisine, "Chinese" %> Chinese
+  <br>
+  <%= f.radio_button :cuisine, "Japanese" %> Japanese
+  <br>
+  <%= f.radio_button :cuisine, "Mexican" %> Mexican
+  <br>
+  <%= f.radio_button :cuisine, "Indian" %> Indian
+  <br>
+  <%= f.radio_button :cuisine, "Cafe" %> Cafe
+  <br>
+  <%= f.radio_button :cuisine, "Mediterranean" %> Mediterranean
+  <br>
+  <%= f.radio_button :cuisine, "Middle Eastern" %> Middle Eastern
+  <br>
+  <%= f.radio_button :cuisine, "Vietnamese" %> Vietnamese
+  <br>
+  <%= f.radio_button :cuisine, "Korean BBQ" %> Korean BBQ
+  <br>
+  <%= f.radio_button :cuisine, "Thai" %> Thai
+  <br>
+  <%= f.radio_button :cuisine, "Pub" %> Pub
+  <br>
+  <%= f.radio_button :cuisine, "Portugese" %> Portugese
+<br>
+<br>
   <%= f.label :location %>
   <%= f.text_field :location %>
-
+<br>
+<br>
   <%= f.label :photo, 'Photo URL' %>
   <%= f.text_field :photo %>
-
+  <br>
   <br>
   <%= f.submit %>
 
