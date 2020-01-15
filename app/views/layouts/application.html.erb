@@ -18,7 +18,12 @@
 
     <header>
       <nav>
-        <a href="/">Home</a>
+        <%= link_to "Home", root_path %>
+        <% if @current_user.present? %>
+          <%= link_to "Logout", login_path, :method => 'delete' %>
+          <% else %>
+          <%= link_to "Login", login_path %>
+          <% end %>
         <a href="/restaurants">Restaurants</a>
       </nav>
     </header>
