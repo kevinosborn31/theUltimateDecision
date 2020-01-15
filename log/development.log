@@ -15934,3 +15934,24 @@ Migrating to Users (20200115005354)
   ↳ db/seeds.rb:117
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:117
+Started GET "/" for ::1 at 2020-01-15 12:18:25 +1100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by RandomizerController#randomize as HTML
+  Rendering randomizer/randomize.html.erb within layouts/application
+  Rendered randomizer/randomize.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 424ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x007fd324581b10>:0x007fd32466aa68>
+Did you mean?  users_new_path):
+    27:           <%= link_to "Logout", login_path, method: 'delete' %>
+    28:           <% else %>
+    29:           <%= link_to "Login", login_path %>
+    30:           <%= link_to 'Sign Up', new_user_path %>
+    31:           <% end %>
+    32:         <a href="/restaurants">Restaurants</a>
+    33:       </nav>
+  
+app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb__2166406423457227718_70272406532000'
