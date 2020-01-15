@@ -1,15 +1,5 @@
 Rails.application.routes.draw do
-  get 'session/new'
-  get 'users/new'
-  get 'pages/home'
-  get 'reviews/index'
-  get 'reviews/show'
-  get 'reviews/new'
-  root :to => 'randomizer#randomize'
 
-  get '/login' => 'session#new'
-  post '/login' => 'session#create'
-  delete '/login' => 'session#destroy'
   # CREATE
   # 1. Blank Form
   # get '/restaurants/new' => 'restaurants#new', as: 'new_restaurant'
@@ -33,6 +23,10 @@ Rails.application.routes.draw do
   # # DESTROY
   # delete '/show/:id' => 'restaurants#destroy'
   # # Create ALL CRUD routes for the Reviews Model
+  get '/login' => 'session#new' #login form
+  post '/login' => 'session#create'
+  delete '/login' => 'session#destroy'
+  
   resources :restaurants
   resources :reviews
 
