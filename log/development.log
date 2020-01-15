@@ -15226,3 +15226,358 @@ Migrating to CreateReviews (20200115004553)
   ↳ /Users/kevinosborn/.rvm/gems/ruby-2.4.1/bin/rake:23
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/kevinosborn/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4248615402513955410)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20200115005116)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "email" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200115005116_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200115005116"]]
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(4248615402513955410)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mRestaurant Create (0.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Outback Steakhouse"], ["price", "Medium"], ["cuisine", "American"], ["location", "Strathfield"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Create (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Hooters"], ["price", "Medium"], ["cuisine", "American"], ["location", "Penrith"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Hogs Breath Cafe"], ["price", "Medium"], ["cuisine", "American"], ["location", "Terrigal"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "TGIF"], ["price", "Medium"], ["cuisine", "American"], ["location", "Macquarie"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sedici"], ["price", "Medium"], ["cuisine", "Italian"], ["location", "Oakhill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bivianos"], ["price", "Expensive"], ["cuisine", "Italian"], ["location", "Dural"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Rick's Pizzeria"], ["price", "Cheap"], ["cuisine", "Italian"], ["location", "Norwest"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Entrata"], ["price", "Expensive"], ["cuisine", "Italian"], ["location", "Glenhaven"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "La Caretta"], ["price", "Cheap"], ["cuisine", "Italian"], ["location", "West Pennant Hills"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Castle Terrace Chinese"], ["price", "Medium"], ["cuisine", "Chinese"], ["location", "Castle Hill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Eastern City Chinese"], ["price", "Cheap"], ["cuisine", "Chinese"], ["location", "Pennant Hills"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Phoenix"], ["price", "Expensive"], ["cuisine", "Chinese"], ["location", "Parramatta"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Grand Lotus"], ["price", "Expensive"], ["cuisine", "Chinese"], ["location", "Rouse Hill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Makimoto"], ["price", "Medium"], ["cuisine", "Japanese"], ["location", "Kellyville"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kamado"], ["price", "Expensive"], ["cuisine", "Japanese"], ["location", "Cherrybrook"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Wonder Sushi"], ["price", "Cheap"], ["cuisine", "Japanese"], ["location", "The Ponds"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sushi Musa"], ["price", "Cheap"], ["cuisine", "Japanese"], ["location", "Rouse Hill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Guyzman Y Gomez"], ["price", "Cheap"], ["cuisine", "Mexican"], ["location", "Wetherill Park"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mad Mex"], ["price", "Cheap"], ["cuisine", "Mexican"], ["location", "North Ryde"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "El Camino Cantina"], ["price", "Expensive"], ["cuisine", "Mexican"], ["location", "The Rocks"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Dos Senoritas"], ["price", "Medium"], ["cuisine", "Mexican"], ["location", "Crow's Nest"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Castle Taj"], ["price", "Medium"], ["cuisine", "Indian"], ["location", "Castle Hill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kashi"], ["price", "Cheap"], ["cuisine", "Indian"], ["location", "Annangrove"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Andaz"], ["price", "Medium"], ["cuisine", "Indian"], ["location", "Castle Hill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:57
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Maharaja's Lakeside"], ["price", "Expensive"], ["cuisine", "Indian"], ["location", "Norwest"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:57
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:57
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "The Burrow"], ["price", "Medium"], ["cuisine", "Cafe"], ["location", "Cherrybrook"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tuck Shop"], ["price", "Cheap"], ["cuisine", "Cafe"], ["location", "Glenhaven"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Frankie's Food Factory"], ["price", "Medium"], ["cuisine", "Cafe"], ["location", "Glenhaven"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Leaf Cafe"], ["price", "Cheap"], ["cuisine", "Cafe"], ["location", "The Ponds"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Enigma"], ["price", "Expensive"], ["cuisine", "Mediterranean"], ["location", "Castle Hill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Zeko"], ["price", "Medium"], ["cuisine", "Mediterranean"], ["location", "Seven Hills"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Lusso Tapas"], ["price", "Medium"], ["cuisine", "Mediterranean"], ["location", "Rouse Hill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:73
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Lezzette"], ["price", "Medium"], ["cuisine", "Mediterranean"], ["location", "Kellyville"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sahra By the River"], ["price", "Expensive"], ["cuisine", "Middle Eastern"], ["location", "Parramatta"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Baba Ghanouj"], ["price", "Medium"], ["cuisine", "Middle Eastern"], ["location", "Dural"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:79
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "El-Phoenician"], ["price", "Medium"], ["cuisine", "Middle Eastern"], ["location", "Parramatta"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:81
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sahara Grill"], ["price", "Cheap"], ["cuisine", "Middle Eastern"], ["location", "The Ponds"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:81
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:81
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:83
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Lil Cilantro"], ["price", "Cheap"], ["cuisine", "Vietnamese"], ["location", "Cherrybrook"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:83
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:83
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:85
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Roll'd"], ["price", "Cheap"], ["cuisine", "Vietnamese"], ["location", "North Ryde"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:87
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "District 1"], ["price", "Medium"], ["cuisine", "Vietnamese"], ["location", "Macquarie"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:87
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:89
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Saigon Phoever"], ["price", "Cheap"], ["cuisine", "Vietnamese"], ["location", "Castle Hill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:91
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Se Jong"], ["price", "Cheap"], ["cuisine", "Korean BBQ"], ["location", "Carlingford"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:91
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:91
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:93
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Biwon"], ["price", "Expensive"], ["cuisine", "Korean BBQ"], ["location", "Hornsby"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:93
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:93
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:95
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Dae Ga"], ["price", "Medium"], ["cuisine", "Korean BBQ"], ["location", "Parramatta"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:95
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sariwon"], ["price", "Medium"], ["cuisine", "Korean BBQ"], ["location", "Parramatta"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Noodle Hut"], ["price", "Medium"], ["cuisine", "Thai"], ["location", "Cherrybrook"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:101
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Wok on Inn"], ["price", "Cheap"], ["cuisine", "Thai"], ["location", "Norwest"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:103
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Pimam"], ["price", "Medium"], ["cuisine", "Thai"], ["location", "Castle Hill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:103
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:103
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:105
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Absolute Thai"], ["price", "Medium"], ["cuisine", "Thai"], ["location", "Hornsby"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:105
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:105
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:107
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "WPH Sports Club"], ["price", "Cheap"], ["cuisine", "Pub"], ["location", "West Pennant Hills"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:107
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:107
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Hillside Hotel"], ["price", "Cheap"], ["cuisine", "Pub"], ["location", "Castle Hill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Fiddler"], ["price", "Medium"], ["cuisine", "Pub"], ["location", "Rouse Hill"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:113
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bella Vista Hotel"], ["price", "Medium"], ["cuisine", "Pub"], ["location", "Bella Vista"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:113
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:113
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:115
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Frangos"], ["price", "Cheap"], ["cuisine", "Portugese"], ["location", "Bella Vista"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:115
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:115
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "price", "cuisine", "location", "photo") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Nandos"], ["price", "Cheap"], ["cuisine", "Portugese"], ["location", "Bella Vista"], ["photo", "fillmurray.com/300/300"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117

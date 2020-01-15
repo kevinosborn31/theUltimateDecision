@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/new'
+  get 'pages/home'
   get 'reviews/index'
   get 'reviews/show'
   get 'reviews/new'
