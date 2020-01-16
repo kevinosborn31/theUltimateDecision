@@ -2,8 +2,10 @@
 <%= @restaurant.name %>
 </h2>
 
+<% if @current_user.admin? %>
 <%= link_to 'Delete', restaurant_path(@restaurant.id), method: 'delete' %>
 <%= link_to 'Edit', edit_restaurant_path(@restaurant.id) %>
+<% end %>
 <!-- <a href="/restaurants">Go back</a> -->
 
 <p>

@@ -24447,3 +24447,245 @@ Processing by RestaurantsController#show as HTML
 Completed 200 OK in 30ms (Views: 24.8ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/restaurants/730" for ::1 at 2020-01-16 16:24:00 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"730"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 730], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (180.9ms)
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 12.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007ffeef52fda0>:0x007ffeef52e338>):
+    2: <%= @restaurant.name %>
+    3: </h2>
+    4: 
+    5: <% if user.admin? %>
+    6: <%= link_to 'Delete', restaurant_path(@restaurant.id), method: 'delete' %>
+    7: <%= link_to 'Edit', edit_restaurant_path(@restaurant.id) %>
+    8: <% end %>
+  
+app/views/restaurants/show.html.erb:5:in `_app_views_restaurants_show_html_erb___4017134984688269380_70366456816620'
+Started GET "/restaurants/730" for ::1 at 2020-01-16 16:24:07 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"730"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 730], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `admin?' for #<Class:0x007ffef2370b38>):
+    2: <%= @restaurant.name %>
+    3: </h2>
+    4: 
+    5: <% if User.admin? %>
+    6: <%= link_to 'Delete', restaurant_path(@restaurant.id), method: 'delete' %>
+    7: <%= link_to 'Edit', edit_restaurant_path(@restaurant.id) %>
+    8: <% end %>
+  
+app/views/restaurants/show.html.erb:5:in `_app_views_restaurants_show_html_erb___4017134984688269380_70366456090000'
+Started GET "/restaurants/730" for ::1 at 2020-01-16 16:24:36 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"730"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 730], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `admin?' for #<Class:0x007ffef2370b38>):
+    2: <%= @restaurant.name %>
+    3: </h2>
+    4: 
+    5: <% if User.admin? %>
+    6: <%= link_to 'Delete', restaurant_path(@restaurant.id), method: 'delete' %>
+    7: <%= link_to 'Edit', edit_restaurant_path(@restaurant.id) %>
+    8: <% end %>
+  
+app/views/restaurants/show.html.erb:5:in `_app_views_restaurants_show_html_erb___4017134984688269380_70366414032540'
+Started DELETE "/login" for ::1 at 2020-01-16 16:24:39 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0XO4pi5Ll1MYA1oppFjfG03RCfiGvp1IlOXcNBORvyN5JIbJbwINTTPk9+rkXZZw8uzUCTYbjBTZnaTdBiVZAA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2020-01-16 16:24:39 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-01-16 16:24:40 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2020-01-16 16:24:44 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"frv/WmHNz2H5Ei2LHI/aGkzmQgG1ylklaegYsM2wWqPW7ME1IIRVf9L1gEhcipNx89uf8AVvSHkkkGBZ2AS8gA==", "email"=>"kevinosborn31@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kevinosborn31@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 285ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/4" for ::1 at 2020-01-16 16:24:44 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants" for ::1 at 2020-01-16 16:24:46 +1100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:4
+  Rendered restaurants/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 28.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/restaurants/730" for ::1 at 2020-01-16 16:24:47 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"730"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 730], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `admin?' for #<Class:0x007ffef2370b38>):
+    2: <%= @restaurant.name %>
+    3: </h2>
+    4: 
+    5: <% if User.admin? %>
+    6: <%= link_to 'Delete', restaurant_path(@restaurant.id), method: 'delete' %>
+    7: <%= link_to 'Edit', edit_restaurant_path(@restaurant.id) %>
+    8: <% end %>
+  
+app/views/restaurants/show.html.erb:5:in `_app_views_restaurants_show_html_erb___4017134984688269380_70366453629640'
+Started GET "/restaurants/730" for ::1 at 2020-01-16 16:27:48 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"730"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 730], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `admin?' for #<Class:0x007ffef2370b38>):
+    2: <%= @restaurant.name %>
+    3: </h2>
+    4: 
+    5: <% if User.admin? %>
+    6: <%= link_to 'Delete', restaurant_path(@restaurant.id), method: 'delete' %>
+    7: <%= link_to 'Edit', edit_restaurant_path(@restaurant.id) %>
+    8: <% end %>
+  
+app/views/restaurants/show.html.erb:5:in `_app_views_restaurants_show_html_erb___4017134984688269380_70366456154260'
+Started GET "/restaurants/730" for ::1 at 2020-01-16 16:28:14 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"730"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 730], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 28ms (Views: 23.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/login" for ::1 at 2020-01-16 16:28:18 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"C1ont84qU3WZuFpIYtItMmHAo4REY7vfsNtUnrZ5m5KjDRnYj2PJa7Jf94si12RZ3v1+dfTGqoP9oyx3o819sQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2020-01-16 16:28:18 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2020-01-16 16:28:23 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KU7ZJRwUOXwoga9V84Jg/K44vOH9dAjiz/Dza3JoRQKBGedKXV2jYgNmApazhymXEQVhEE3RGb6CiIuCZ9yjIQ==", "email"=>"judeosborn@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "judeosborn@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 262ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/6" for ::1 at 2020-01-16 16:28:23 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants" for ::1 at 2020-01-16 16:28:25 +1100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:4
+  Rendered restaurants/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/restaurants/730" for ::1 at 2020-01-16 16:28:26 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"730"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 730], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 0.5ms)
+
+
