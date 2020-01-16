@@ -2,6 +2,12 @@ class RestaurantsController < ApplicationController
 
   skip_before_action :verify_authenticity_token, raise: false
 
+  def random_restaurant
+     restaurant = Restaurant.all.sample
+     redirect_to restaurant_path(restaurant.id)
+
+  end
+
   def new
     @restaurant = Restaurant.new
   end
@@ -9,7 +15,7 @@ class RestaurantsController < ApplicationController
   def create
     Restaurant.create restaurant_params
 
-    redirect_to "/restaurants"
+    redirect_to '/restaurants'
   end
 
   def index

@@ -24,3 +24,5 @@
 </p>
 
 <img src="<%= @restaurant.photo %>" alt="<%= @restaurant.name %>">
+
+<%= link_to 'Add Review', new_review_path(@restaurant.id) %>

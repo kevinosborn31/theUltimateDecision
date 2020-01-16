@@ -8,6 +8,10 @@
 User.destroy_all
 u1 = User.create! name:"Kevin", email: "kevinosborn31@gmail.com", password: 'chicken', admin: true
 u2 = User.create! name:"Ram", email: "ram@gmail.com", password: 'dog', admin: false
+
+Review.destroy_all
+r1 = Review.create! rating:5, comment:"Bad Restaurant"
+
 Restaurant.destroy_all
 
 

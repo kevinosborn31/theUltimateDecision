@@ -6,9 +6,10 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    @current_user.reviews.create name: params[:review][:name]
+    # Review.create rating: 2, comment: "commentttt", user: @current_user
+  @current_user.reviews.create review_params
+  redirect_to reviews_path
 
-    redirect_to reviews_path
   end
 
   def index
@@ -34,8 +35,13 @@ class ReviewsController < ApplicationController
   def destroy
   end
 
+
+
   private
   def check_ownership
     redirect_to login_path and return unless @review.user == @current.user
+  end
+  def review_params
+    params.require(:review).permit( :user, :rating, :comment, :restaurant)
   end
 end

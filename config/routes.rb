@@ -23,15 +23,16 @@ Rails.application.routes.draw do
   # # DESTROY
   # delete '/show/:id' => 'restaurants#destroy'
   # # Create ALL CRUD routes for the Reviews Model
-
+  post '/random_resturant' => 'restaurants#random_restaurant'
   get '/login' => 'session#new' #login form
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
 
-  root to: 'pages#home'
+  root to: 'restaurants#home'
   resources :users
   resources :restaurants
   resources :reviews
+  get '/reviews/new' => 'reviews#new'
 
 end
   # get 'restaurants/index'
