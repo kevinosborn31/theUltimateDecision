@@ -6,9 +6,9 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    @current_user.mixtapes.create name: params[:mixtape][:name]
+    @current_user.reviews.create name: params[:review][:name]
 
-    redirect_to mixtapes_path
+    redirect_to reviews_path
   end
 
   def index
@@ -28,7 +28,7 @@ class ReviewsController < ApplicationController
 
     redirect_to login_path and return unelss @review.user == @current_user
     puts "UPDATED REVIEW"
-    redirect_to mixtape_path(@mixtape.id)
+    redirect_to review_path(@review.id)
   end
 
   def destroy
@@ -36,6 +36,6 @@ class ReviewsController < ApplicationController
 
   private
   def check_ownership
-    redirect_to login_path and return unless @mixtape.user == @current.user
+    redirect_to login_path and return unless @review.user == @current.user
   end
 end
