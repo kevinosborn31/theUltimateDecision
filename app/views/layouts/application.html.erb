@@ -18,7 +18,7 @@
 
     <header>
       <nav>
-        <%= link_to "Home", root_path %>
+        <a href="/">Home</a>
         <% if @current_user.present? %>
         Welcome, <%= @current_user.name %>
         <% if @current_user.admin? %>
@@ -27,7 +27,7 @@
           <%= link_to "Logout", login_path, method: 'delete' %>
           <% else %>
           <%= link_to "Login", login_path %>
-          <%= link_to 'Sign Up', new_user_path %> 
+          <%= link_to 'Sign Up', new_user_path %>
           <% end %>
         <a href="/restaurants">Restaurants</a>
       </nav>

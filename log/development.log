@@ -16200,3 +16200,653 @@ Did you mean?  font_path):
     24:         <% if @current_user.admin? %>
   
 app/views/layouts/application.html.erb:21:in `_app_views_layouts_application_html_erb__2166406423457227718_70272417916400'
+Started GET "/login" for ::1 at 2020-01-16 14:09:41 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 321ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x007fd322fbddd8>:0x007fd32a8518d0>
+Did you mean?  font_path):
+    18: 
+    19:     <header>
+    20:       <nav>
+    21:         <%= link_to "Home", root_path %>
+    22:         <% if @current_user.present? %>
+    23:         Welcome, <%= @current_user.name %>
+    24:         <% if @current_user.admin? %>
+  
+app/views/layouts/application.html.erb:21:in `_app_views_layouts_application_html_erb__2166406423457227718_70272464198540'
+Started GET "/login" for ::1 at 2020-01-16 14:11:03 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_url' for #<#<Class:0x007fd322fbddd8>:0x007fd326de3bf8>):
+    18: 
+    19:     <header>
+    20:       <nav>
+    21:         <%= link_to "Home", root_url %>
+    22:         <% if @current_user.present? %>
+    23:         Welcome, <%= @current_user.name %>
+    24:         <% if @current_user.admin? %>
+  
+app/views/layouts/application.html.erb:21:in `_app_views_layouts_application_html_erb__2166406423457227718_70272433425540'
+Started GET "/login" for ::1 at 2020-01-16 14:11:08 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x007fd322fbddd8>:0x007fd3225f7600>
+Did you mean?  new_review_path):
+    27:           <%= link_to "Logout", login_path, method: 'delete' %>
+    28:           <% else %>
+    29:           <%= link_to "Login", login_path %>
+    30:           <%= link_to 'Sign Up', new_user_path %>
+    31:           <% end %>
+    32:         <a href="/restaurants">Restaurants</a>
+    33:       </nav>
+  
+app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb__2166406423457227718_70272394881560'
+Started GET "/login" for ::1 at 2020-01-16 14:11:18 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x007fd322fbddd8>:0x007fd32a02f738>
+Did you mean?  font_path):
+    18: 
+    19:     <header>
+    20:       <nav>
+    21:         <%= link_to "Home", root_path %>
+    22:         <% if @current_user.present? %>
+    23:         Welcome, <%= @current_user.name %>
+    24:         <% if @current_user.admin? %>
+  
+app/views/layouts/application.html.erb:21:in `_app_views_layouts_application_html_erb__2166406423457227718_70272459825240'
+Started GET "/restaurants" for ::1 at 2020-01-16 14:12:58 +1100
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (2.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:4
+  Rendered restaurants/index.html.erb within layouts/application (41.9ms)
+Completed 500 Internal Server Error in 267ms (ActiveRecord: 17.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x007fd322ed4de0>:0x007fd322ec4468>
+Did you mean?  font_path):
+    18: 
+    19:     <header>
+    20:       <nav>
+    21:         <%= link_to "Home", root_path %>
+    22:         <% if @current_user.present? %>
+    23:         Welcome, <%= @current_user.name %>
+    24:         <% if @current_user.admin? %>
+  
+app/views/layouts/application.html.erb:21:in `_app_views_layouts_application_html_erb__2166406423457227718_70272400469880'
+Started GET "/restaurants" for ::1 at 2020-01-16 14:13:11 +1100
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:4
+  Rendered restaurants/index.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 200ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x007fd322ed4de0>:0x007fd323eb3950>
+Did you mean?  new_review_path):
+    27:           <%= link_to "Logout", login_path, method: 'delete' %>
+    28:           <% else %>
+    29:           <%= link_to "Login", login_path %>
+    30:           <%= link_to 'Sign Up', new_user_path %>
+    31:           <% end %>
+    32:         <a href="/restaurants">Restaurants</a>
+    33:       </nav>
+  
+app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb__2166406423457227718_70272409157460'
+Started GET "/restaurants" for ::1 at 2020-01-16 14:13:46 +1100
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:4
+  Rendered restaurants/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.0ms)
+
+
+  
+SyntaxError (/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/views/layouts/application.html.erb:30: syntax error, unexpected tCONSTANT, expecting ')'
+buffer.append=( #link_to 'Sign Up', new_user_path );@output_
+                              ^
+/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/views/layouts/application.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+r.safe_append='        <a href="/restaurants">Restaurants</a
+                              ^
+/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/views/layouts/application.html.erb:33: unknown regexp options - av
+/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/views/layouts/application.html.erb:34: syntax error, unexpected '<'
+    </header>
+     ^
+/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/views/layouts/application.html.erb:36: unknown regexp options - bdy
+/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/views/layouts/application.html.erb:37: syntax error, unexpected '<'
+</html>
+ ^
+/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/views/layouts/application.html.erb:37: unterminated regexp meets end of file):
+  
+app/views/layouts/application.html.erb:30: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/layouts/application.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:33: unknown regexp options - av
+app/views/layouts/application.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:36: unknown regexp options - bdy
+app/views/layouts/application.html.erb:37: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:37: unterminated regexp meets end of file
+Started GET "/restaurants" for ::1 at 2020-01-16 14:13:53 +1100
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:4
+  Rendered restaurants/index.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x007fd322ed4de0>:0x007fd326d40458>
+Did you mean?  new_review_path):
+    27:           <%= link_to "Logout", login_path, method: 'delete' %>
+    28:           <% else %>
+    29:           <%= link_to "Login", login_path %>
+    30:           <%= link_to 'Sign Up', new_user_path %>
+    31:           <% end %>
+    32:         <a href="/restaurants">Restaurants</a>
+    33:       </nav>
+  
+app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb__2166406423457227718_70272433081180'
+Started GET "/restaurants" for ::1 at 2020-01-16 14:35:05 +1100
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:4
+  Rendered restaurants/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x007fd322ed4de0>:0x007fd323d00ba8>
+Did you mean?  new_review_path):
+    27:           <%= link_to "Logout", login_path, method: 'delete' %>
+    28:           <% else %>
+    29:           <%= link_to "Login", login_path %>
+    30:           <%= link_to 'Sign Up', new_user_path %>
+    31:           <% end %>
+    32:         <a href="/restaurants">Restaurants</a>
+    33:       </nav>
+  
+app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb__2166406423457227718_70272407751220'
+Started GET "/restaurants/index" for ::1 at 2020-01-16 14:38:36 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+Completed 404 Not Found in 12ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=index):
+  
+app/controllers/restaurants_controller.rb:20:in `show'
+Started GET "/restaurants/2" for ::1 at 2020-01-16 14:38:39 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+Completed 404 Not Found in 3ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=2):
+  
+app/controllers/restaurants_controller.rb:20:in `show'
+Started GET "/restaurants/1" for ::1 at 2020-01-16 14:38:40 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+Completed 404 Not Found in 1ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=1):
+  
+app/controllers/restaurants_controller.rb:20:in `show'
+Started GET "/restaurants/show/1" for ::1 at 2020-01-16 14:38:50 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants/show/1"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/restaurants/1" for ::1 at 2020-01-16 14:38:54 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=1):
+  
+app/controllers/restaurants_controller.rb:20:in `show'
+Started GET "/" for ::1 at 2020-01-16 15:13:14 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-01-16 15:13:24 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x007fd322fbddd8>:0x007fd32a893050>
+Did you mean?  new_review_path):
+    27:           <%= link_to "Logout", login_path, method: 'delete' %>
+    28:           <% else %>
+    29:           <%= link_to "Login", login_path %>
+    30:           <%= link_to 'Sign Up', new_user_path %>
+    31:           <% end %>
+    32:         <a href="/restaurants">Restaurants</a>
+    33:       </nav>
+  
+app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb__2166406423457227718_70272460569800'
+Started GET "/rails/info/routes" for ::1 at 2020-01-16 15:14:25 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [19 times] (12.2ms)
+  Rendered /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 31ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-01-16 15:14:54 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 211ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x007fd322fbddd8>:0x007fd32b1af7b0>
+Did you mean?  new_review_path):
+    27:           <%= link_to "Logout", login_path, method: 'delete' %>
+    28:           <% else %>
+    29:           <%= link_to "Login", login_path %>
+    30:           <%= link_to 'Sign Up', new_user_path %>
+    31:           <% end %>
+    32:         <a href="/restaurants">Restaurants</a>
+    33:       </nav>
+  
+app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb__2166406423457227718_70272469005480'
+Started GET "/login" for ::1 at 2020-01-16 15:15:45 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/new" for ::1 at 2020-01-16 15:16:16 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/login/new"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/login" for ::1 at 2020-01-16 15:16:17 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for ::1 at 2020-01-16 15:16:19 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/user/new"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2020-01-16 15:16:21 +1100
+  
+SyntaxError (/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/controllers/users_controller.rb:14: syntax error, unexpected tCONSTANT, expecting keyword_end
+    @user User.create user_params
+              ^):
+  
+app/controllers/users_controller.rb:14: syntax error, unexpected tCONSTANT, expecting keyword_end
+Started GET "/restaurants" for ::1 at 2020-01-16 15:17:43 +1100
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:4
+  Rendered restaurants/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 51ms (Views: 35.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/restaurants/8" for ::1 at 2020-01-16 15:17:46 +1100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 21.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/fillmurray.com/300/300" for ::1 at 2020-01-16 15:17:46 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants/fillmurray.com/300/300"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/restaurants/8/edit" for ::1 at 2020-01-16 15:17:50 +1100
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:24
+  Rendering restaurants/edit.html.erb within layouts/application
+  Rendered restaurants/_form.html.erb (87.3ms)
+  Rendered restaurants/edit.html.erb within layouts/application (89.7ms)
+Completed 200 OK in 115ms (Views: 105.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-16 15:17:59 +1100
+  
+SyntaxError (/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/controllers/users_controller.rb:14: syntax error, unexpected tCONSTANT, expecting keyword_end
+    @user User.create user_params
+              ^):
+  
+app/controllers/users_controller.rb:14: syntax error, unexpected tCONSTANT, expecting keyword_end
+Started POST "/login" for ::1 at 2020-01-16 15:18:10 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cu7tkXGKeO2WSfEOPVE5BfKTynqUCj5eZHusPYY2UWSiudP+MMPi872uXM19VHBuTa4XiySvLwIpA9TUk4K3Rw==", "email"=>"kevinosborn31@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kevinosborn31@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/login
+Completed 302 Found in 13ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/restaurants" for ::1 at 2020-01-16 15:18:39 +1100
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:4
+  Rendered restaurants/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 42ms (Views: 32.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurants" for ::1 at 2020-01-16 15:19:19 +1100
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:4
+  Rendered restaurants/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x007fd32b8ea6d8>:0x007fd325077ab0>
+Did you mean?  font_path):
+    18: 
+    19:     <header>
+    20:       <nav>
+    21:         <%= link_to "Home", root_path %>
+    22:         <% if @current_user.present? %>
+    23:         Welcome, <%= @current_user.name %>
+    24:         <% if @current_user.admin? %>
+  
+app/views/layouts/application.html.erb:21:in `_app_views_layouts_application_html_erb__2166406423457227718_70272418020340'
+Started GET "/rails/info/routes" for ::1 at 2020-01-16 15:19:59 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (5.8ms)
+  Rendered /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/randomizer" for ::1 at 2020-01-16 15:19:59 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/randomizer"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/login" for ::1 at 2020-01-16 15:20:54 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x007fd32a50edd0>:0x007fd32a50d3b8>
+Did you mean?  font_path):
+    18: 
+    19:     <header>
+    20:       <nav>
+    21:         <%= link_to "Home", root_path %>
+    22:         <% if @current_user.present? %>
+    23:         Welcome, <%= @current_user.name %>
+    24:         <% if @current_user.admin? %>
+  
+app/views/layouts/application.html.erb:21:in `_app_views_layouts_application_html_erb__2166406423457227718_70272462368300'
+Started GET "/" for ::1 at 2020-01-16 15:21:48 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-01-16 15:22:31 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-01-16 15:22:33 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kevinosborn/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2020-01-16 15:24:54 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5paAuXiNQLXCrnl2r2bcTyaGxI4UW3VcCy0URoPJGPVOwb7WOcTaq+lJ1LXvY5UkmbsZf6T+ZABGVWyvln3+1g==", "email"=>"kevinosborn31@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kevinosborn31@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/login
+Completed 302 Found in 24ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/login" for ::1 at 2020-01-16 15:24:54 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-16 15:24:58 +1100
+  
+SyntaxError (/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/controllers/users_controller.rb:14: syntax error, unexpected tCONSTANT, expecting keyword_end
+    @user User.create user_params
+              ^):
+  
+app/controllers/users_controller.rb:14: syntax error, unexpected tCONSTANT, expecting keyword_end
+Started GET "/login" for ::1 at 2020-01-16 15:29:12 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-16 15:29:13 +1100
+  
+SyntaxError (/Users/kevinosborn/Desktop/sei/project/theUltimateDecision/app/controllers/users_controller.rb:14: syntax error, unexpected tCONSTANT, expecting keyword_end
+    @user User.create user_params
+              ^):
+  
+app/controllers/users_controller.rb:14: syntax error, unexpected tCONSTANT, expecting keyword_end
+Started GET "/users/new" for ::1 at 2020-01-16 15:37:19 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 47ms (Views: 26.8ms | ActiveRecord: 10.2ms)
+
+
+Started POST "/users" for ::1 at 2020-01-16 15:38:09 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uTfffNpERl9gukDvKNnb1JsZ2DtrExcwgYAv4+LKDVsRYOETmw3cQUtd7Sxo3JK/JCQFytu2BmzM+FcK937reA==", "user"=>{"name"=>"Kevin Osborn", "email"=>"kevinosborn31@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+Completed 500 Internal Server Error in 287ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `password_digest=' for #<User:0x007fd32b0a6dc8>
+Did you mean?  password=):
+  
+app/controllers/users_controller.rb:14:in `create'
