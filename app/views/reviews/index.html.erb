@@ -10,12 +10,13 @@
       <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
         <h5><%= review.restaurant %></h5><br>
         <p>Rating: <%= review.rating %></p><br>
-        <p>Comment: <%= review.comment %></p>
+        <p>Comment: <%= review.comment %></p><br>
+        <% if @current_user.present? && @current_user.admin? %>
+        <%= link_to 'Delete', method: 'delete', :class => 'mdl-button' %>
+        <% end %>
       </div>
       <% end %>
-    <div class="mdl-card__actions">
-      <a href="#" class="mdl-button">Add Review</a>
-    </div>
+
   </div>
 
 </section>

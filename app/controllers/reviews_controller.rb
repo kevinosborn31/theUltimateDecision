@@ -33,6 +33,9 @@ class ReviewsController < ApplicationController
   end
 
   def destroy
+    Review.destroy params[:id]
+
+    redirect_to reviews_path
   end
 
 

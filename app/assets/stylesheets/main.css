@@ -247,3 +247,12 @@ html, body {
 .login button {
   color: white;
 }
+
+#main-footer {
+  background-color: #3F52B5;
+  color: white;
+}
+
+#main-login a {
+  color: white;
+}
