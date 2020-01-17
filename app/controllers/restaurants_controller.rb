@@ -5,7 +5,6 @@ class RestaurantsController < ApplicationController
   def random_restaurant
      restaurant = Restaurant.all.sample
      redirect_to restaurant_path(restaurant.id)
-
   end
 
   def new
