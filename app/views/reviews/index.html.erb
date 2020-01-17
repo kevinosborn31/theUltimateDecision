@@ -1,13 +1,21 @@
-<h2>Reviews</h2>
-<%= link_to 'New Review', new_review_path %>
-<ul class="demo-list-icon mdl-list">
-  <% @reviews.each do |review| %>
-  <li class="mdl-list__item" id="kevin">
-    <span class="mdl-list__item-primary-content">
-    <p><%= review.restaurant %></p>
-    <p><%= review.rating %></p>
-    <p><%= review.comment %></p>
-    </span>
-  </li>
-  <% end %>
-</ul>
+
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+      <h4 class="mdl-cell mdl-cell--12-col">Reviews</h4>
+      <% @reviews.each do |review| %>
+      <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+        <!-- <div class="section__circle-container__circle mdl-color--primary"></div> -->
+      </div>
+      <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+        <h5><%= review.restaurant %></h5><br>
+        <p>Rating: <%= review.rating %></p><br>
+        <p>Comment: <%= review.comment %></p>
+      </div>
+      <% end %>
+    <div class="mdl-card__actions">
+      <a href="#" class="mdl-button">Add Review</a>
+    </div>
+  </div>
+
+</section>

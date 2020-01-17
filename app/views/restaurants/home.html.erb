@@ -1,1 +1,14 @@
-<%= button_to "Randomize", :action => "random_restaurant" %>
+
+
+  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+      <div class="mdl-card__supporting-text">
+        <h4>The Ultimate Decision</h4>
+        Use the below button to make the ultimate decision
+      </div>
+      <div class="mdl-card__actions">
+        <div class="mdl-button mdl-js-button mdl-button--raised">
+        <%= button_to "Pick Restaurant", :action => "random_restaurant", :class => "mdl-button mdl-js-button mdl-button--raised" %>
+      </div>
+    </div>
+  </section>

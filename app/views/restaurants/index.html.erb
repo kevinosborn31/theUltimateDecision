@@ -1,12 +1,23 @@
-<h2>Restaurants</h2>
-<a href="restaurants/new">Add Restaurant</a>
-<ul class="demo-list-icon mdl-list">
-  <% @restaurants.each do |restaurant| %>
-  <li class="mdl-list__item" id="kevin">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons mdl-list__item-icon">restaurant</i>
-    <a href="restaurants/<%= restaurant.id %>"><%= restaurant.name %></a>
-    </span>
-  </li>
-  <% end %>
-</ul>
+
+
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+      <h4 class="mdl-cell mdl-cell--12-col">Restaurants</h4>
+      <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+      <% @restaurants.each do |restaurant| %>
+        <ul class="demo-list-icon mdl-list">
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">restaurant</i>
+            <a href="restaurants/<%= restaurant.id %>"><%= restaurant.name %></a>
+            </span>
+          </li>
+        </ul>
+      <% end %>
+    <div class="mdl-card__actions">
+      <a href="restaurants/new" class="mdl-button">Add Restaurant</a>
+    </div>
+  </div>
+
+</section>
