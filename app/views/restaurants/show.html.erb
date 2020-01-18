@@ -27,7 +27,7 @@
       </p>
     </div>
     <div class="mdl-card__actions">
-      <%= link_to 'Add Review', new_review_path(@restaurant.id), :class => 'mdl-button' %>
+      <%= link_to 'Add Review', new_review_path(:restaurant_id => @restaurant.id), :class => 'mdl-button' %>
       <% if @current_user.present? && @current_user.admin? %>
       <%= link_to 'Delete', restaurant_path(@restaurant.id), method: 'delete', :class => 'mdl-button' %>
       <%= link_to 'Edit', edit_restaurant_path(@restaurant.id), :class => 'mdl-button' %>
