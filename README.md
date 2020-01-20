@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Live Website: https://the-ultimate-decision.herokuapp.com/
 
-Things you may want to cover:
+* Ruby 2.4.1
 
-* Ruby version
+* Rails website that contains a database of restaurants
 
-* System dependencies
+* Includes login functionality, and ability to make reviews (Reviews not working on heroku at the moments)
 
-* Configuration
+* Admin functionality, admins can edit and delete restaurant entries
 
-* Database creation
+* Button that randomly picks a restaurant for you to eat at
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Need to improve layout and attach reviews to restaurants directly
