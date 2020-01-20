@@ -8,7 +8,7 @@ class ReviewsController < ApplicationController
 
   def create
     # Review.create rating: 2, comment: "commentttt", user: @current_user
-  @current_user.reviews.create review_params
+  @restaurant.reviews.create review_params
   redirect_to reviews_path
 
   end
