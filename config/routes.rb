@@ -32,7 +32,7 @@ Rails.application.routes.draw do
   resources :users
   resources :restaurants
   resources :reviews
-  get '/reviews/new/' => 'reviews#new'
+  # get '/reviews/new/' => 'reviews#new'
 
 end
   # get 'restaurants/index'
