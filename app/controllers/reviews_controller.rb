@@ -7,7 +7,6 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    # Review.create rating: 2, comment: "commentttt", user: @current_user
   @current_user.reviews.create review_params
   redirect_to reviews_path
 
@@ -29,7 +28,6 @@ class ReviewsController < ApplicationController
     @review = Review.find params[:id]
 
     redirect_to login_path and return unelss @review.user == @current_user
-    puts "UPDATED REVIEW"
     redirect_to review_path(@review.id)
   end
 
@@ -38,8 +36,6 @@ class ReviewsController < ApplicationController
 
     redirect_to reviews_path
   end
-
-
 
   private
   def check_ownership

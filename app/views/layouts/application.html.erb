@@ -23,27 +23,20 @@
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
-
     <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
 
     <link rel="stylesheet" href="../stylesheets/main.css">
     <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
+      #view-source {
+        position: fixed;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        z-index: 900;
+      }
     </style>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -56,98 +49,87 @@
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
           <h3>The Ultimate Decision</h3>
           <div class="login" id="main-login">
-          <% if @current_user.present? %>
-          Logged in as <%= @current_user.name %>
-          <% if @current_user.admin? %>
-          (admin)
-          <% end %>
-          <%= link_to "Logout", login_path, method: 'delete', :class => "mdl-button" %>
-          <% else %>
-          <%= link_to "Login", login_path, :class => "mdl-button"  %>
-          <%= link_to 'Sign Up', new_user_path, :class => "mdl-button" %>
-          <% end %>
+            <% if @current_user.present? %>
+            Logged in as <%= @current_user.name %>
+            <% if @current_user.admin? %>
+            (admin)
+            <% end %>
+            <%= link_to "Logout", login_path, method: 'delete', :class => "mdl-button" %>
+            <% else %>
+            <%= link_to "Login", login_path, :class => "mdl-button"  %>
+            <%= link_to 'Sign Up', new_user_path, :class => "mdl-button" %>
+            <% end %>
           </div>
         </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="/" class="mdl-layout__tab">Home</a>
           <a href="/restaurants" class="mdl-layout__tab">Restaurants</a>
           <a href="/reviews" class="mdl-layout__tab">Reviews</a>
-
-          <!-- <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-            <i class="material-icons" role="presentation">add</i>
-            <span class="visuallyhidden">Add</span>
-          </button> -->
         </div>
       </header>
-
       <main class="mdl-layout__content">
-      <%= yield %>
+        <%= yield %>
       </main>
       <footer class="mdl-mega-footer" id="main-footer">
-  <div class="mdl-mega-footer__middle-section">
+        <div class="mdl-mega-footer__middle-section">
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Features</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Updates</a></li>
+            </ul>
+          </div>
 
-    <div class="mdl-mega-footer__drop-down-section">
-      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">Features</h1>
-      <ul class="mdl-mega-footer__link-list">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Partners</a></li>
-        <li><a href="#">Updates</a></li>
-      </ul>
-    </div>
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Details</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Specs</a></li>
+              <li><a href="#">Tools</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
 
-    <div class="mdl-mega-footer__drop-down-section">
-      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">Details</h1>
-      <ul class="mdl-mega-footer__link-list">
-        <li><a href="#">Specs</a></li>
-        <li><a href="#">Tools</a></li>
-        <li><a href="#">Resources</a></li>
-      </ul>
-    </div>
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Technology</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Patterns</a></li>
+              <li><a href="#">Usage</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contracts</a></li>
+            </ul>
+          </div>
 
-    <div class="mdl-mega-footer__drop-down-section">
-      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">Technology</h1>
-      <ul class="mdl-mega-footer__link-list">
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">Patterns</a></li>
-        <li><a href="#">Usage</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contracts</a></li>
-      </ul>
-    </div>
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">FAQ</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Questions</a></li>
+              <li><a href="#">Answers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
 
-    <div class="mdl-mega-footer__drop-down-section">
-      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">FAQ</h1>
-      <ul class="mdl-mega-footer__link-list">
-        <li><a href="#">Questions</a></li>
-        <li><a href="#">Answers</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="mdl-mega-footer__bottom-section">
-    <div class="mdl-logo">Title</div>
-    <ul class="mdl-mega-footer__link-list">
-      <li><a href="#">Help</a></li>
-      <li><a href="#">Privacy & Terms</a></li>
-    </ul>
-  </div>
-
-</footer>
         </div>
 
+        <div class="mdl-mega-footer__bottom-section">
+          <div class="mdl-logo">Title</div>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy & Terms</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

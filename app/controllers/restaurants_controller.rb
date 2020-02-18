@@ -1,5 +1,4 @@
 class RestaurantsController < ApplicationController
-
   skip_before_action :verify_authenticity_token, raise: false
 
   def random_restaurant
@@ -34,18 +33,16 @@ class RestaurantsController < ApplicationController
     restaurant.update restaurant_params
 
     redirect_to restaurant_path(restaurant.id)
-end
+  end
 
-def destroy
-  Restaurant.destroy params[:id]
+  def destroy
+    Restaurant.destroy params[:id]
 
-  redirect_to restaurants_path
-end
+    redirect_to restaurants_path
+  end
 
-private
-
-def restaurant_params
-  params.require(:restaurant).permit( :name, :price, :cuisine, :location, :photo)
-end
-
+  private
+  def restaurant_params
+    params.require(:restaurant).permit( :name, :price, :cuisine, :location, :photo)
+  end
 end
